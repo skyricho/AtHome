@@ -18,19 +18,72 @@
     <![endif]-->
   </head>
   <body>
-    <h1>MAP 23</h1>
-    <h2>Block 1</h2>
-    <h3>Innes Rd</h3>
- 
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">2</button>
-    <button type="button" class="btn btn-success">4</button>
-    <button type="button" class="btn">6</button>
-    <button type="button" class="btn btn-secondary">8</button>
-    <button type="button" class="btn btn-secondary">10</button>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">MAP 19</button>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Homes</a></li>
+  <li role="presentation"><a href="#">Units</a></li>
+  <li role="presentation"><a href="#">Map</a></li>
+</ul>
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    Block 1 <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Block 2</a></li>
+      <li><a href="#">Block 3</a></li>
+    </ul>
+    <button type="button" class="btn btn-secondary">Hide Visited</button>
   </div>
- </div>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Innes Rd</a>&nbsp<span class="glyphicon glyphicon-sort-by-order"></span>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+         <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">2</button>
+            <button type="button" class="btn btn-success">4</button>
+            <button type="button" class="btn">6</button>
+            <button type="button" class="btn btn-secondary">8</button>
+            <button type="button" class="btn btn-secondary">10</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Addiscombe Rd</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">More buttons that correspond to house numbers...</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Quirk Rd</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">More buttons that correspond to house numbers...</div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <!-- Modal -->
@@ -42,7 +95,7 @@
         <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
       </div>
       <div class="modal-body">
-        {{street number}} Innes Rd
+       {{street number}} Innes Rd
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -51,7 +104,49 @@
     </div>
   </div>
 </div>
+   
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel1">Maps</h4>
+      </div>
+      <div class="modal-body">
 
+<h4>Queenscliff</h6>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+         <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+          </div>
+        </div>
+<br>
+<h4>Freshwater</h6>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+         <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">4</button>
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+            <button type="button" class="btn btn-secondary">8</button>
+            <button type="button" class="btn btn-secondary">9</button>
+            <button type="button" class="btn btn-secondary">10</button>
+          </div>
+        </div>
+<br>
+<h4>North Manly</h6>
+<p>More maps...</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
